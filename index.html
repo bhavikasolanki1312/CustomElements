@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Angular Elements</title>
+    <script src="http://127.0.0.1:8080/elements/elements.js"></script>
+</head>
+
+<body>
+    <ngsd-button button-label="Click Me!">
+        <!-- <span slot="title">
+            <h1>This is the title!</h1>
+        </span> -->
+    </ngsd-button>
+    <script>
+        const component = document.querySelector('ngsd-button');
+        component.addEventListener('customEvent', event => {
+            alert(event.detail);
+        })
+    </script>
+</body>
+
+</html>
